@@ -1,0 +1,154 @@
+2026-02-24T00:07:46.562+04:00  INFO 26844 --- [guestService] [main] c.l.g.GuestServiceApplication            : Starting GuestServiceApplication using Java 17.0.18 with PID 26844 (C:\Users\orkha\OneDrive\Documents\WMSapi\guestService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
+2026-02-24T00:07:46.587+04:00  INFO 26844 --- [guestService] [main] c.l.g.GuestServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T00:07:51.853+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-24T00:07:51.858+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24T00:07:52.388+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 490 ms. Found 1 JPA repository interface.
+2026-02-24T00:07:52.447+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-24T00:07:52.451+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-24T00:07:52.503+04:00  INFO 26844 --- [guestService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.guestservice.repository.GuestRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-24T00:07:52.504+04:00  INFO 26844 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-02-24T00:07:56.068+04:00  INFO 26844 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-24T00:07:56.107+04:00  INFO 26844 --- [guestService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T00:07:56.109+04:00  INFO 26844 --- [guestService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-24T00:07:56.322+04:00  INFO 26844 --- [guestService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-24T00:07:56.323+04:00  INFO 26844 --- [guestService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9028 ms
+2026-02-24T00:07:57.561+04:00  INFO 26844 --- [guestService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-24T00:07:57.799+04:00  INFO 26844 --- [guestService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-24T00:07:57.896+04:00  INFO 26844 --- [guestService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-24T00:07:58.575+04:00  INFO 26844 --- [guestService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24T00:07:58.638+04:00  INFO 26844 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-24T00:07:59.029+04:00  INFO 26844 --- [guestService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29188050
+2026-02-24T00:07:59.032+04:00  INFO 26844 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-24T00:07:59.110+04:00  WARN 26844 --- [guestService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-24T00:08:01.658+04:00  INFO 26844 --- [guestService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24T00:08:01.839+04:00  WARN 26844 --- [guestService] [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists guests 
+       alter column created_at set data type timestamp(6)" via JDBC [ERROR: column "created_at" cannot be cast automatically to type timestamp without time zone
+  Hint: You might need to specify "USING created_at::timestamp(6) without time zone".]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists guests 
+       alter column created_at set data type timestamp(6)" via JDBC [ERROR: column "created_at" cannot be cast automatically to type timestamp without time zone
+  Hint: You might need to specify "USING created_at::timestamp(6) without time zone".]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:333) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.ltc.guestservice.GuestServiceApplication.main(GuestServiceApplication.java:12) ~[main/:na]
+Caused by: org.postgresql.util.PSQLException: ERROR: column "created_at" cannot be cast automatically to type timestamp without time zone
+  Hint: You might need to specify "USING created_at::timestamp(6) without time zone".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	... 38 common frames omitted
+
+2026-02-24T00:08:01.854+04:00  INFO 26844 --- [guestService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T00:08:03.404+04:00  WARN 26844 --- [guestService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24T00:08:03.682+04:00 DEBUG 26844 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2026-02-24T00:08:03.983+04:00 DEBUG 26844 --- [guestService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-24T00:08:04.063+04:00 DEBUG 26844 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-24T00:08:04.154+04:00 DEBUG 26844 --- [guestService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-24T00:08:04.620+04:00 DEBUG 26844 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-02-24T00:08:04.623+04:00 DEBUG 26844 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-02-24T00:08:04.976+04:00  INFO 26844 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-24T00:08:05.021+04:00  INFO 26844 --- [guestService] [main] c.l.g.GuestServiceApplication            : Started GuestServiceApplication in 20.444 seconds (process running for 24.927)
+2026-02-24T00:09:55.531+04:00  INFO 26844 --- [guestService] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24T00:09:55.532+04:00  INFO 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-24T00:09:55.532+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-24T00:09:55.532+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-24T00:09:55.532+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-24T00:09:55.533+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@74ec4df3
+2026-02-24T00:09:55.534+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@48cbb4c5
+2026-02-24T00:09:55.534+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-24T00:09:55.534+04:00  INFO 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-24T00:09:55.542+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2026-02-24T00:09:55.547+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-02-24T00:09:55.601+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:09:55.615+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2026-02-24T00:09:55.617+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2026-02-24T00:09:55.633+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-02-24T00:09:55.635+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8082/swagger-ui/oauth2-re (truncated)...]
+2026-02-24T00:09:55.639+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:09:55.647+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2026-02-24T00:09:55.648+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2026-02-24T00:09:55.988+04:00  INFO 26844 --- [guestService] [http-nio-8082-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 329 ms
+2026-02-24T00:09:56.006+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2026-02-24T00:09:56.006+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2026-02-24T00:09:56.007+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:48.998+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:48.999+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:49.533+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:49.544+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[GuestResponseDTO(id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, c (truncated)...]
+2026-02-24T00:10:49.547+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:51.838+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:51.839+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:51.850+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:51.851+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, category=RELATIVE (truncated)...]
+2026-02-24T00:10:51.852+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:52.053+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:52.054+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:52.058+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:52.059+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, category=RELATIVE (truncated)...]
+2026-02-24T00:10:52.060+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:53.047+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:53.047+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:53.051+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:53.051+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, category=RELATIVE (truncated)...]
+2026-02-24T00:10:53.052+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:54.145+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:54.145+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:54.149+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:54.149+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, category=RELATIVE (truncated)...]
+2026-02-24T00:10:54.150+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:10:55.102+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-24T00:10:55.103+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-24T00:10:55.107+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-24T00:10:55.107+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=string, lastName=string, phoneNumber=stringstring, email=string, category=RELATIVE (truncated)...]
+2026-02-24T00:10:55.108+04:00 DEBUG 26844 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-24T00:11:30.362+04:00 DEBUG 26844 --- [guestService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-02-24T00:11:30.364+04:00  INFO 26844 --- [guestService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T00:11:30.366+04:00  INFO 26844 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-24T00:11:30.368+04:00  INFO 26844 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
