@@ -1,181 +1,43 @@
-2026-02-23T03:19:28.960+04:00  INFO 11776 --- [tableService] [main] c.l.t.TableServiceApplication            : Starting TableServiceApplication using Java 17.0.18 with PID 11776 (C:\Users\orkha\OneDrive\Documents\WMSapi\tableService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
-2026-02-23T03:19:28.964+04:00  INFO 11776 --- [tableService] [main] c.l.t.TableServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-02-23T03:19:30.909+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-02-23T03:19:30.916+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-23T03:19:30.980+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 0 JPA repository interfaces.
-2026-02-23T03:19:31.006+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-02-23T03:19:31.008+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-02-23T03:19:31.024+04:00  INFO 11776 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
-2026-02-23T03:19:31.871+04:00  INFO 11776 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2026-02-23T03:19:31.883+04:00  INFO 11776 --- [tableService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-23T03:19:31.883+04:00  INFO 11776 --- [tableService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-02-23T03:19:31.963+04:00  INFO 11776 --- [tableService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-02-23T03:19:31.964+04:00  INFO 11776 --- [tableService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2919 ms
-2026-02-23T03:19:32.135+04:00  INFO 11776 --- [tableService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-02-23T03:19:32.207+04:00  INFO 11776 --- [tableService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-02-23T03:19:32.244+04:00  INFO 11776 --- [tableService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-02-23T03:19:32.501+04:00  INFO 11776 --- [tableService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-23T03:19:32.528+04:00  INFO 11776 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-23T03:19:33.674+04:00 ERROR 11776 --- [tableService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2026-02-24T20:16:06.858+04:00  INFO 22432 --- [tableService] [main] c.l.t.TableServiceApplication            : Starting TableServiceApplication using Java 17.0.18 with PID 22432 (C:\Users\orkha\OneDrive\Documents\WMSapi\tableService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
+2026-02-24T20:16:06.872+04:00  INFO 22432 --- [tableService] [main] c.l.t.TableServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T20:16:09.198+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-24T20:16:09.203+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24T20:16:09.232+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2026-02-24T20:16:09.254+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-24T20:16:09.256+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-24T20:16:09.271+04:00  INFO 22432 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-02-24T20:16:10.226+04:00  INFO 22432 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-02-24T20:16:10.240+04:00  INFO 22432 --- [tableService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T20:16:10.240+04:00  INFO 22432 --- [tableService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-24T20:16:10.339+04:00  INFO 22432 --- [tableService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-24T20:16:10.340+04:00  INFO 22432 --- [tableService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3378 ms
+2026-02-24T20:16:10.556+04:00  INFO 22432 --- [tableService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-24T20:16:10.657+04:00  INFO 22432 --- [tableService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-24T20:16:10.709+04:00  INFO 22432 --- [tableService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-24T20:16:11.095+04:00  INFO 22432 --- [tableService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24T20:16:11.132+04:00  INFO 22432 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-24T20:16:11.390+04:00  INFO 22432 --- [tableService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43423d40
+2026-02-24T20:16:11.393+04:00  INFO 22432 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-24T20:16:11.456+04:00  WARN 22432 --- [tableService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-24T20:16:12.250+04:00  INFO 22432 --- [tableService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24T20:16:12.297+04:00  INFO 22432 --- [tableService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:16:13.238+04:00  WARN 22432 --- [tableService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24T20:16:13.667+04:00 DEBUG 22432 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2026-02-24T20:16:13.897+04:00 DEBUG 22432 --- [tableService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-24T20:16:13.969+04:00 DEBUG 22432 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-24T20:16:14.038+04:00 DEBUG 22432 --- [tableService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-24T20:16:14.894+04:00 DEBUG 22432 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-02-24T20:16:14.895+04:00 DEBUG 22432 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-02-24T20:16:15.031+04:00  WARN 22432 --- [tableService] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-org.postgresql.util.PSQLException: FATAL: database "table_db" does not exist
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.2.jar:42.6.2]
-	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.2.jar:42.6.2]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
-	at com.ltc.tableservice.TableServiceApplication.main(TableServiceApplication.java:10) ~[main/:na]
-
-2026-02-23T03:19:33.678+04:00  WARN 11776 --- [tableService] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
-
-java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
-	at com.ltc.tableservice.TableServiceApplication.main(TableServiceApplication.java:10) ~[main/:na]
-
-2026-02-23T03:19:33.695+04:00  WARN 11776 --- [tableService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-23T03:19:33.990+04:00  INFO 11776 --- [tableService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-23T03:19:33.996+04:00  INFO 11776 --- [tableService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-23T03:19:34.130+04:00  WARN 11776 --- [tableService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-23T03:19:34.217+04:00 DEBUG 11776 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2026-02-23T03:19:34.294+04:00 DEBUG 11776 --- [tableService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-02-23T03:19:34.325+04:00 DEBUG 11776 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-02-23T03:19:34.350+04:00 DEBUG 11776 --- [tableService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-02-23T03:19:34.733+04:00 DEBUG 11776 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-02-23T03:19:34.734+04:00 DEBUG 11776 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-02-23T03:19:34.800+04:00  WARN 11776 --- [tableService] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 62ffaafa-f7bb-4d9e-ba70-cbb60191c3fb
+Using generated security password: aed08507-382b-4445-8a10-4fd8a731aba0
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-02-23T03:19:34.887+04:00  INFO 11776 --- [tableService] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32d8e58d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c941d19, org.springframework.security.web.context.SecurityContextHolderFilter@6344004d, org.springframework.security.web.header.HeaderWriterFilter@37b44e8e, org.springframework.web.filter.CorsFilter@5248c05a, org.springframework.security.web.csrf.CsrfFilter@7674f9d4, org.springframework.security.web.authentication.logout.LogoutFilter@6a906078, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4779df3d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c31e01f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@151f1734, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6892d403, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d40a2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a7fd77f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@601e7c97, org.springframework.security.web.access.ExceptionTranslationFilter@20276412, org.springframework.security.web.access.intercept.AuthorizationFilter@3a6409ec]
-2026-02-23T03:19:34.943+04:00  INFO 11776 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
-2026-02-23T03:19:34.955+04:00  INFO 11776 --- [tableService] [main] c.l.t.TableServiceApplication            : Started TableServiceApplication in 6.815 seconds (process running for 8.205)
-2026-02-23T03:19:50.336+04:00 DEBUG 11776 --- [tableService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-02-23T03:19:50.344+04:00  INFO 11776 --- [tableService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-23T03:19:53.649+04:00  INFO 5616 --- [tableService] [main] c.l.t.TableServiceApplication            : Starting TableServiceApplication using Java 17.0.18 with PID 5616 (C:\Users\orkha\OneDrive\Documents\WMSapi\tableService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
-2026-02-23T03:19:53.654+04:00  INFO 5616 --- [tableService] [main] c.l.t.TableServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-02-23T03:19:54.533+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-02-23T03:19:54.535+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-23T03:19:54.553+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-2026-02-23T03:19:54.570+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-02-23T03:19:54.571+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-02-23T03:19:54.580+04:00  INFO 5616 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
-2026-02-23T03:19:55.149+04:00  INFO 5616 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2026-02-23T03:19:55.158+04:00  INFO 5616 --- [tableService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-23T03:19:55.158+04:00  INFO 5616 --- [tableService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-02-23T03:19:55.217+04:00  INFO 5616 --- [tableService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-02-23T03:19:55.217+04:00  INFO 5616 --- [tableService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1506 ms
-2026-02-23T03:19:55.343+04:00  INFO 5616 --- [tableService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-02-23T03:19:55.411+04:00  INFO 5616 --- [tableService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-02-23T03:19:55.441+04:00  INFO 5616 --- [tableService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-02-23T03:19:55.648+04:00  INFO 5616 --- [tableService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-23T03:19:55.671+04:00  INFO 5616 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-23T03:19:55.813+04:00  INFO 5616 --- [tableService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e0b123
-2026-02-23T03:19:55.814+04:00  INFO 5616 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-23T03:19:55.847+04:00  WARN 5616 --- [tableService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-23T03:19:56.190+04:00  INFO 5616 --- [tableService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-23T03:19:56.195+04:00  INFO 5616 --- [tableService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-23T03:19:56.342+04:00  WARN 5616 --- [tableService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-23T03:19:56.452+04:00 DEBUG 5616 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2026-02-23T03:19:56.550+04:00 DEBUG 5616 --- [tableService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-02-23T03:19:56.590+04:00 DEBUG 5616 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-02-23T03:19:56.623+04:00 DEBUG 5616 --- [tableService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-02-23T03:19:57.084+04:00 DEBUG 5616 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-02-23T03:19:57.085+04:00 DEBUG 5616 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-02-23T03:19:57.164+04:00  WARN 5616 --- [tableService] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 54347a55-9033-466f-97ae-a532bfa05b7b
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-23T03:19:57.268+04:00  INFO 5616 --- [tableService] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b55f0a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fc7abf6, org.springframework.security.web.context.SecurityContextHolderFilter@4d359c69, org.springframework.security.web.header.HeaderWriterFilter@43c3354, org.springframework.web.filter.CorsFilter@1016b44e, org.springframework.security.web.csrf.CsrfFilter@64836643, org.springframework.security.web.authentication.logout.LogoutFilter@7156f8cf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e0b68e5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55731ccd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c6c93f8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ec75228, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71dfca65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fa86ddd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38e88e13, org.springframework.security.web.access.ExceptionTranslationFilter@2fafa9bf, org.springframework.security.web.access.intercept.AuthorizationFilter@341c0dfc]
-2026-02-23T03:19:57.347+04:00  INFO 5616 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
-2026-02-23T03:19:57.364+04:00  INFO 5616 --- [tableService] [main] c.l.t.TableServiceApplication            : Started TableServiceApplication in 4.241 seconds (process running for 4.92)
-2026-02-23T05:23:40.546+04:00 DEBUG 5616 --- [tableService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-02-23T05:23:40.568+04:00  INFO 5616 --- [tableService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-23T05:23:40.576+04:00  INFO 5616 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-23T05:23:40.582+04:00  INFO 5616 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-24T20:16:15.246+04:00  INFO 22432 --- [tableService] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36ae17ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f919230, org.springframework.security.web.context.SecurityContextHolderFilter@5e7ea81b, org.springframework.security.web.header.HeaderWriterFilter@22349ad3, org.springframework.web.filter.CorsFilter@48d14ea0, org.springframework.security.web.csrf.CsrfFilter@55731ccd, org.springframework.security.web.authentication.logout.LogoutFilter@1016b44e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55a2f08b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3dd27116, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21251e43, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@535b4dbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7568134c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28c75c93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@677274e7, org.springframework.security.web.access.ExceptionTranslationFilter@22cf1808, org.springframework.security.web.access.intercept.AuthorizationFilter@6e475994]
+2026-02-24T20:16:15.363+04:00  INFO 22432 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2026-02-24T20:16:15.378+04:00  INFO 22432 --- [tableService] [main] c.l.t.TableServiceApplication            : Started TableServiceApplication in 9.814 seconds (process running for 14.392)
+2026-02-24T20:16:30.818+04:00 DEBUG 22432 --- [tableService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-02-24T20:16:30.826+04:00  INFO 22432 --- [tableService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:16:30.829+04:00  INFO 22432 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-24T20:16:30.843+04:00  INFO 22432 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
