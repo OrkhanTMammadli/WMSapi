@@ -39,7 +39,6 @@ public class GMImplementation implements GuestMethods {
     }
 
     @Override
-    @Cacheable(value = GUEST_CACHE_NAME, key = "#id")
     public GuestResponseDTO findGuestById(Long id) {
         Guest foundGuest = guestRepository.findById(id).orElseThrow(() -> new GuestNotFoundException("Guest not found"));
         return guestMapper.toGuestResponseDTO(foundGuest);

@@ -19,6 +19,7 @@ import java.util.List;
 @Slf4j
 public class GuestController {
     private final GMImplementation gMImplementation;
+
     @Operation(summary = "Add a new Guest")
     @PostMapping("/addGuest")
     public ResponseEntity<GuestResponseDTO> addGuest(@RequestBody @Valid GuestRequestDTO guestRequestDTO){

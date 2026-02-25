@@ -70,3 +70,1159 @@
 2026-02-25T14:35:09.508+04:00 DEBUG 30836 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
 2026-02-25T14:35:09.660+04:00  INFO 30836 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
 2026-02-25T14:35:09.685+04:00  INFO 30836 --- [guestService] [main] c.l.g.GuestServiceApplication            : Started GuestServiceApplication in 12.055 seconds (process running for 25.254)
+2026-02-25T15:52:38.928+04:00 DEBUG 30836 --- [guestService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-02-25T15:52:38.933+04:00  INFO 30836 --- [guestService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T15:52:38.942+04:00  INFO 30836 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-25T15:52:38.946+04:00  INFO 30836 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-25T21:17:18.738+04:00  INFO 19704 --- [guestService] [main] c.l.g.GuestServiceApplication            : Starting GuestServiceApplication using Java 17.0.18 with PID 19704 (C:\Users\orkha\OneDrive\Documents\WMSapi\guestService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
+2026-02-25T21:17:18.744+04:00  INFO 19704 --- [guestService] [main] c.l.g.GuestServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T21:17:20.372+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-25T21:17:20.375+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T21:17:20.582+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interface.
+2026-02-25T21:17:20.605+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-25T21:17:20.607+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-25T21:17:20.628+04:00  INFO 19704 --- [guestService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.guestservice.repository.GuestRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-25T21:17:20.628+04:00  INFO 19704 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-02-25T21:17:21.322+04:00  INFO 19704 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-25T21:17:21.335+04:00  INFO 19704 --- [guestService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-25T21:17:21.335+04:00  INFO 19704 --- [guestService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-25T21:17:21.432+04:00  INFO 19704 --- [guestService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-25T21:17:21.433+04:00  INFO 19704 --- [guestService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2587 ms
+2026-02-25T21:17:21.892+04:00  INFO 19704 --- [guestService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T21:17:21.963+04:00  INFO 19704 --- [guestService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-25T21:17:22.004+04:00  INFO 19704 --- [guestService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T21:17:22.298+04:00  INFO 19704 --- [guestService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T21:17:22.332+04:00  INFO 19704 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T21:17:22.638+04:00  INFO 19704 --- [guestService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c3cd7a5
+2026-02-25T21:17:22.640+04:00  INFO 19704 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T21:17:22.682+04:00  WARN 19704 --- [guestService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T21:17:23.807+04:00  INFO 19704 --- [guestService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-25T21:17:23.958+04:00  INFO 19704 --- [guestService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T21:17:24.533+04:00  WARN 19704 --- [guestService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T21:17:24.666+04:00 DEBUG 19704 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2026-02-25T21:17:24.771+04:00 DEBUG 19704 --- [guestService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-25T21:17:24.812+04:00 DEBUG 19704 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-25T21:17:24.855+04:00 DEBUG 19704 --- [guestService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-25T21:17:25.129+04:00 DEBUG 19704 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-02-25T21:17:25.130+04:00 DEBUG 19704 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-02-25T21:17:25.238+04:00  INFO 19704 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-25T21:17:25.252+04:00  INFO 19704 --- [guestService] [main] c.l.g.GuestServiceApplication            : Started GuestServiceApplication in 7.771 seconds (process running for 9.083)
+2026-02-25T21:18:56.675+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-25T21:18:56.676+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-25T21:18:56.677+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-25T21:18:56.677+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-25T21:18:56.677+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-25T21:18:56.679+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@315bb2bb
+2026-02-25T21:18:56.683+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6b61a4b0
+2026-02-25T21:18:56.684+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-25T21:18:56.685+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2026-02-25T21:18:56.715+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2026-02-25T21:18:56.743+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-02-25T21:18:56.837+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-02-25T21:18:56.888+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2026-02-25T21:18:56.898+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-02-25T21:18:57.021+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:18:57.053+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2026-02-25T21:18:57.056+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2026-02-25T21:18:57.104+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-02-25T21:18:57.108+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8082/swagger-ui/oauth2-re (truncated)...]
+2026-02-25T21:18:57.120+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:18:57.133+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2026-02-25T21:18:57.134+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2026-02-25T21:18:57.787+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 629 ms
+2026-02-25T21:18:57.829+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2026-02-25T21:18:57.832+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2026-02-25T21:18:57.834+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:19:00.572+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2026-02-25T21:19:00.589+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-02-25T21:19:00.596+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:19:00.722+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2026-02-25T21:19:00.723+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2026-02-25T21:19:00.724+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-02-25T21:19:00.725+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8082/swagger-ui/oauth2-re (truncated)...]
+2026-02-25T21:19:00.727+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:19:00.742+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2026-02-25T21:19:00.743+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2026-02-25T21:19:00.748+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2026-02-25T21:19:00.750+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2026-02-25T21:19:00.751+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:21:01.755+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-25T21:21:01.757+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-25T21:21:02.988+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-10] c.l.g.controller.GuestController         : All Guests: [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320), GuestResponseDTO(id=3, firstName=string, lastName=string, phoneNumber=994502903407, email=string@gmail.com, category=RELATIVE, invited=true, confirmed=true, createdAt=2026-02-24T16:29:29.098)]
+2026-02-25T21:21:03.003+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:21:03.006+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@ (truncated)...]
+2026-02-25T21:21:03.012+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:21:05.702+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-25T21:21:05.703+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-25T21:21:05.722+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-1] c.l.g.controller.GuestController         : All Guests: [{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.32}, {id=3, firstName=string, lastName=string, phoneNumber=994502903407, email=string@gmail.com, category=RELATIVE, invited=true, confirmed=true, createdAt=2026-02-24T16:29:29.098}]
+2026-02-25T21:21:05.724+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:21:05.725+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, categ (truncated)...]
+2026-02-25T21:21:05.727+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:21:11.021+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-25T21:21:11.023+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-25T21:21:11.036+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-2] c.l.g.controller.GuestController         : All Guests: [{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.32}, {id=3, firstName=string, lastName=string, phoneNumber=994502903407, email=string@gmail.com, category=RELATIVE, invited=true, confirmed=true, createdAt=2026-02-24T16:29:29.098}]
+2026-02-25T21:21:11.040+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:21:11.041+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, categ (truncated)...]
+2026-02-25T21:21:11.045+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:21:12.263+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-25T21:21:12.264+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-25T21:21:12.276+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-3] c.l.g.controller.GuestController         : All Guests: [{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.32}, {id=3, firstName=string, lastName=string, phoneNumber=994502903407, email=string@gmail.com, category=RELATIVE, invited=true, confirmed=true, createdAt=2026-02-24T16:29:29.098}]
+2026-02-25T21:21:12.280+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:21:12.281+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[{id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, categ (truncated)...]
+2026-02-25T21:21:12.288+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:25:41.606+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:25:41.608+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:25:41.663+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-5] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:25:41.667+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:25:41.667+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:25:41.671+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:25:52.536+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/allGuests", parameters={}
+2026-02-25T21:25:52.537+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getAllGuests()
+2026-02-25T21:25:52.551+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-6] c.l.g.controller.GuestController         : All Guests: [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320), GuestResponseDTO(id=3, firstName=string, lastName=string, phoneNumber=994502903407, email=string@gmail.com, category=RELATIVE, invited=true, confirmed=true, createdAt=2026-02-24T16:29:29.098)]
+2026-02-25T21:25:52.551+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:25:52.552+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@ (truncated)...]
+2026-02-25T21:25:52.554+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:26:16.393+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:26:16.395+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:26:16.403+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:26:16.404+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:26:16.431+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:26:16.434+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:26:16.439+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:26:16.439+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:26:16 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:26:16.448+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:26:53.924+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:26:53.928+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:26:53.937+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:26:53.938+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:26:53.943+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:26:53.945+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:26:53.948+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:26:53.950+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:26:53 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:26:53.952+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:40.524+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:40.526+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:40.553+04:00  INFO 19704 --- [guestService] [http-nio-8082-exec-10] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:28:40.555+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:40.556+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:28:40.560+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:28:44.298+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:44.299+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:44.308+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:44.309+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:44.313+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:44.314+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:44.317+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:44.318+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:44 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:44.320+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:45.661+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:45.661+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:45.667+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:45.668+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:45.671+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:45.672+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:45.673+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:45.674+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:45 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:45.675+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:46.814+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:46.816+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:46.830+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:46.832+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:46.838+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:46.839+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:46.841+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:46.844+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:46 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:46.847+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:47.639+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:47.640+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:47.650+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:47.651+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:47.655+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:47.657+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:47.659+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:47.660+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:47 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:47.663+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:49.267+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:49.269+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:49.278+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:49.280+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:49.284+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:49.285+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:49.288+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:49.289+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:49 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:49.291+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:50.634+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:50.636+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:50.652+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:50.653+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:50.657+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:50.659+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:50.661+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:50.664+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:50 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:50.667+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:51.695+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:51.697+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:51.702+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:51.703+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:51.705+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:51.705+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:51.706+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:51.707+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:51 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:51.708+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:52.979+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:52.981+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:52.991+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:52.993+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:52.995+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:52.997+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:52.999+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:53.000+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:52 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:53.002+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:54.004+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:54.006+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:54.016+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:54.018+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:54.022+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:54.024+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:54.025+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:54.026+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:54 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:54.029+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:54.975+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:54.977+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:54.988+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:54.989+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:54.993+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:54.994+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:54.997+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:54.998+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:54 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:55.002+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:28:55.577+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:28:55.579+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:28:55.588+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:28:55.589+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:28:55.593+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:28:55.595+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:28:55.598+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:28:55.600+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:28:55 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:28:55.610+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:30:13.361+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:30:13.363+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:30:13.377+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:30:13.378+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:30:14.122+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:30:14.124+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2026-02-25T21:30:14.199+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2026-02-25T21:30:14.216+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:30:14.389+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-25T21:30:14.390+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-25T21:30:14.394+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-25T21:30:14.396+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-25T21:30:14.398+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-02-25T21:30:14.398+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:30:14.401+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:30:14.402+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2026-02-25T21:30:14.403+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:30:14 AZT 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-02-25T21:30:14.407+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-02-25T21:30:31.711+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:30:31.712+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:30:31.722+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+2026-02-25T21:30:31.723+04:00 ERROR 19704 --- [guestService] [http-nio-8082-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.ltc.guestservice.dto.GuestResponseDTO (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.ltc.guestservice.dto.GuestResponseDTO is in unnamed module of loader 'app')
+	at com.ltc.guestservice.service.GMImplementation$$SpringCGLIB$$0.findGuestById(<generated>) ~[main/:na]
+	at com.ltc.guestservice.controller.GuestController.getGuestById(GuestController.java:40) ~[main/:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor65.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-25T21:30:31.729+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-02-25T21:30:31.732+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-25T21:30:31.734+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:30:31.735+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 25 21:30:31 AZT 2026, status=500, error=Internal Server Error, path=/api/guest/ge (truncated)...]
+2026-02-25T21:30:31.742+04:00 DEBUG 19704 --- [guestService] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2026-02-25T21:33:10.625+04:00 DEBUG 19704 --- [guestService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-02-25T21:33:10.633+04:00  INFO 19704 --- [guestService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T21:33:10.639+04:00  INFO 19704 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-25T21:33:10.656+04:00  INFO 19704 --- [guestService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-25T21:33:20.703+04:00  INFO 15520 --- [guestService] [main] c.l.g.GuestServiceApplication            : Starting GuestServiceApplication using Java 17.0.18 with PID 15520 (C:\Users\orkha\OneDrive\Documents\WMSapi\guestService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
+2026-02-25T21:33:20.708+04:00  INFO 15520 --- [guestService] [main] c.l.g.GuestServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T21:33:22.732+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-25T21:33:22.736+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T21:33:23.162+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 409 ms. Found 1 JPA repository interface.
+2026-02-25T21:33:23.189+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-25T21:33:23.191+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-25T21:33:23.214+04:00  INFO 15520 --- [guestService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.guestservice.repository.GuestRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-25T21:33:23.214+04:00  INFO 15520 --- [guestService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2026-02-25T21:33:24.651+04:00  INFO 15520 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-25T21:33:24.674+04:00  INFO 15520 --- [guestService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-25T21:33:24.675+04:00  INFO 15520 --- [guestService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-25T21:33:24.785+04:00  INFO 15520 --- [guestService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-25T21:33:24.785+04:00  INFO 15520 --- [guestService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3982 ms
+2026-02-25T21:33:25.380+04:00  INFO 15520 --- [guestService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T21:33:25.469+04:00  INFO 15520 --- [guestService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-25T21:33:25.522+04:00  INFO 15520 --- [guestService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T21:33:26.214+04:00  INFO 15520 --- [guestService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T21:33:26.294+04:00  INFO 15520 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T21:33:26.726+04:00  INFO 15520 --- [guestService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d2a8819
+2026-02-25T21:33:26.734+04:00  INFO 15520 --- [guestService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T21:33:26.896+04:00  WARN 15520 --- [guestService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T21:33:28.986+04:00  INFO 15520 --- [guestService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-25T21:33:29.112+04:00  INFO 15520 --- [guestService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T21:33:29.898+04:00  WARN 15520 --- [guestService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T21:33:30.098+04:00 DEBUG 15520 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2026-02-25T21:33:30.272+04:00 DEBUG 15520 --- [guestService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-25T21:33:30.368+04:00 DEBUG 15520 --- [guestService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-25T21:33:30.470+04:00 DEBUG 15520 --- [guestService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-25T21:33:31.027+04:00 DEBUG 15520 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-02-25T21:33:31.030+04:00 DEBUG 15520 --- [guestService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-02-25T21:33:31.259+04:00  INFO 15520 --- [guestService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-25T21:33:31.293+04:00  INFO 15520 --- [guestService] [main] c.l.g.GuestServiceApplication            : Started GuestServiceApplication in 11.978 seconds (process running for 15.399)
+2026-02-25T21:33:41.675+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-25T21:33:41.676+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-25T21:33:41.677+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-25T21:33:41.678+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-25T21:33:41.679+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-25T21:33:41.684+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@54626326
+2026-02-25T21:33:41.687+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@389fad5b
+2026-02-25T21:33:41.688+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-25T21:33:41.689+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2026-02-25T21:33:41.724+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:33:41.768+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:33:41.984+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-1] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:33:42.101+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:33:42.105+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:33:42.142+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:33:49.650+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:33:49.653+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:33:49.659+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-2] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:33:49.661+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2026-02-25T21:33:49.665+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:33:49.667+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:33:55.640+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:33:55.643+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:33:55.655+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-3] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:33:55.657+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:33:55.659+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:33:55.663+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-25T21:35:58.747+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/guest/getGuestbyId/1", parameters={}
+2026-02-25T21:35:58.751+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.guestservice.controller.GuestController#getGuestById(Long)
+2026-02-25T21:35:58.763+04:00  INFO 15520 --- [guestService] [http-nio-8082-exec-7] c.l.g.controller.GuestController         : Guest Found: GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@gmail.com, category=RELATIVE, invited=true, confirmed=false, createdAt=2026-02-24T16:09:19.320)
+2026-02-25T21:35:58.766+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-25T21:35:58.767+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GuestResponseDTO(id=1, firstName=Orkhan, lastName=Mammadli, phoneNumber=994502903409, email=orkhan@g (truncated)...]
+2026-02-25T21:35:58.772+04:00 DEBUG 15520 --- [guestService] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
