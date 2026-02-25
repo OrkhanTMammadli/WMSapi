@@ -1,31 +1,30 @@
-package com.ltc.guestservice.entity;
+package com.ltc.eventservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name = "Guests")
+@Table(name = "Events")
 
-public class Guest {
+public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
-    private String firstName;
+    private String name;
     @Column(nullable = false)
-    private String lastName;
+    private String venue;
     @Column(nullable = false)
-    private String phoneNumber;
+    private String address;
     @Column(nullable = false)
-    private String email;
-    @Enumerated(EnumType.STRING)
-    private GuestCategory category;
+    private LocalDateTime eventDate;
     @Column(nullable = false)
-    private Boolean invited;
+    private Integer totalTables;
     @Column(nullable = false)
-    private Boolean confirmed;
+    private Integer totalGuests;
     @Column(nullable = false)
     private LocalDateTime createdAt;
 }
