@@ -5,10 +5,12 @@ import com.ltc.tableservice.dto.GuestResponseDTO;
 import com.ltc.tableservice.dto.TableRequestDTO;
 import com.ltc.tableservice.dto.TableResponseDTO;
 import com.ltc.tableservice.entity.WeddingTable;
+import com.ltc.tableservice.exception.NoAvailableTablesForEvent;
 import com.ltc.tableservice.exception.TableAlreadyExistsException;
 import com.ltc.tableservice.exception.TableNotFoundException;
 import com.ltc.tableservice.mapper.TableMapper;
 import com.ltc.tableservice.repository.TableRepository;
+import com.ltc.tableservice.repository.WeddingTableRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
@@ -26,6 +28,7 @@ public class TableImplementation implements TableMethods {
     private final TableMapper tableMapper;
     private static final String TABLE_CACHE_NAME = "tableCache";
     private final EmailService emailService;
+    private final WeddingTableRepository weddingTableRepository;
 
 
     @Override
@@ -83,4 +86,12 @@ public class TableImplementation implements TableMethods {
         }
         throw new IllegalArgumentException("Guest not found");
     }
+    public WeddingTable findAvailableTable(Long eventId) {
+        log.info("Finding available table for event {}", eventId);
+        List<WeddingTable> tables = weddingTableRepository.findAvailableTablesByEventId(eventId);
+        if (tables.isEmpty()) {
+            throw new NoAvailableTablesForEvent("No available tables for event: " + eventId);}
+        return tables.get(0);}
 }
+
+

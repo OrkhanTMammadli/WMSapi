@@ -26,4 +26,21 @@ public class GlobalExceptionHandler {
         ex.getBindingResult().getFieldErrors().forEach(error ->
                 errors.put(error.getField(), error.getDefaultMessage()));
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);}
+    @ExceptionHandler(NoAvailableTablesForEvent.class)
+    public ResponseEntity<String> handleNoAvailableTablesForEventException (NoAvailableTablesForEvent exception){
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());
+    }
+    @ExceptionHandler(WeddingTableIsFullException.class)
+    public ResponseEntity<String> handleWeddingTableIsFullException (WeddingTableIsFullException exception){
+        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(exception.getMessage());
+    }
+    @ExceptionHandler(GuestAlreadyAssignedToAnotherTableException.class)
+    public ResponseEntity<String> handleGuestAlreadyAssignedToAnotherTableException (GuestAlreadyAssignedToAnotherTableException exception){
+        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(exception.getMessage());
+    }
+    @ExceptionHandler(GuestNotConfirmedYetException.class)
+    public ResponseEntity<String> handleGuestNotConfirmedYetException (GuestNotConfirmedYetException exception){
+        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(exception.getMessage());
+    }
+
 }

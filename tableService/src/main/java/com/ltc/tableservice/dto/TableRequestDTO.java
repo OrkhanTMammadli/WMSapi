@@ -10,11 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TableRequestDTO {
-    @Positive
     private String tableNumber;
     @Positive
     private Integer capacity;
-    @Positive
     private Integer occupiedSeats;
     private Long eventId;
 }
