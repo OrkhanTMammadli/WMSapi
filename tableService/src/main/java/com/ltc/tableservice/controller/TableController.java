@@ -36,10 +36,10 @@ public class TableController {
         return new ResponseEntity<>(tableResponseDTO, HttpStatus.ACCEPTED);
     }
     @PostMapping("/{tableId}/assign/{guestId}")
-    public ResponseEntity<Void> assign(@PathVariable Long tableId, @PathVariable Long guestId) {
+    public ResponseEntity<String> assign(@PathVariable Long tableId, @PathVariable Long guestId) {
         tableAssignmentService.assignGuestToTable(tableId, guestId);
         log.info("Table assigned to guest with id {}", guestId);
-        return ResponseEntity.accepted().build();
+        return ResponseEntity.ok("Guest " + guestId + " successfully assigned to table " + tableId);
     }
     @Operation(summary = "Showing all tables")
     @GetMapping("/allTables")

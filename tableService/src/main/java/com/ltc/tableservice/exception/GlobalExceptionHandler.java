@@ -1,12 +1,15 @@
 package com.ltc.tableservice.exception;
 
+import com.ltc.tableservice.dto.ErrorResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.awt.geom.RectangularShape;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,8 +42,15 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(exception.getMessage());
     }
     @ExceptionHandler(GuestNotConfirmedYetException.class)
-    public ResponseEntity<String> handleGuestNotConfirmedYetException (GuestNotConfirmedYetException exception){
-        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(exception.getMessage());
+    public ResponseEntity<ErrorResponseDTO> handleGuestNotConfirmedYetException (GuestNotConfirmedYetException exception){
+        return buildResponse("Guest Not Confirmed Yet", HttpStatus.NOT_ACCEPTABLE);
+    }
+    private ResponseEntity<ErrorResponseDTO> buildResponse(String message, HttpStatus status) {
+        ErrorResponseDTO error = new ErrorResponseDTO(
+                status.value(),
+                message,
+                LocalDateTime.now());
+        return new ResponseEntity<>(error, status);
     }
 
 }

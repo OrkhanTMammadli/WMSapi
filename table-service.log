@@ -1223,3 +1223,150 @@ java.lang.RuntimeException: Table is full
 2026-02-27T02:30:16.681+04:00 DEBUG 23700 --- [tableService] [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Guest already assigned to a table"]
 2026-02-27T02:30:16.681+04:00 DEBUG 23700 --- [tableService] [http-nio-8083-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.ltc.tableservice.exception.GuestAlreadyAssignedToAnotherTableException: Guest already assigned to a table]
 2026-02-27T02:30:16.682+04:00 DEBUG 23700 --- [tableService] [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 406 NOT_ACCEPTABLE
+2026-02-27T02:46:16.907+04:00 DEBUG 23700 --- [tableService] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-02-27T02:46:16.913+04:00  INFO 23700 --- [tableService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T02:46:16.915+04:00  INFO 23700 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T02:46:16.918+04:00  INFO 23700 --- [tableService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T02:46:23.575+04:00  INFO 28440 --- [tableService] [main] c.l.t.TableServiceApplication            : Starting TableServiceApplication using Java 17.0.18 with PID 28440 (C:\Users\orkha\OneDrive\Documents\WMSapi\tableService\build\classes\java\main started by orkha in C:\Users\orkha\OneDrive\Documents\WMSapi)
+2026-02-27T02:46:23.579+04:00  INFO 28440 --- [tableService] [main] c.l.t.TableServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T02:46:25.556+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-27T02:46:25.559+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T02:46:25.779+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 210 ms. Found 3 JPA repository interfaces.
+2026-02-27T02:46:25.799+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-27T02:46:25.800+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-27T02:46:25.818+04:00  INFO 28440 --- [tableService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.tableservice.repository.TableGuestRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-27T02:46:25.819+04:00  INFO 28440 --- [tableService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.tableservice.repository.TableRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-27T02:46:25.820+04:00  INFO 28440 --- [tableService] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.tableservice.repository.WeddingTableRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-27T02:46:25.822+04:00  INFO 28440 --- [tableService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-02-27T02:46:26.132+04:00  INFO 28440 --- [tableService] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b625521-959c-314f-b1ee-fcc95c8be6a0
+2026-02-27T02:46:27.604+04:00  INFO 28440 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-02-27T02:46:27.632+04:00  INFO 28440 --- [tableService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T02:46:27.633+04:00  INFO 28440 --- [tableService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27T02:46:27.783+04:00  INFO 28440 --- [tableService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-27T02:46:27.784+04:00  INFO 28440 --- [tableService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4141 ms
+2026-02-27T02:46:28.144+04:00 DEBUG 28440 --- [tableService] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2026-02-27T02:46:28.697+04:00  INFO 28440 --- [tableService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T02:46:28.829+04:00  INFO 28440 --- [tableService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27T02:46:28.944+04:00  INFO 28440 --- [tableService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T02:46:29.374+04:00  INFO 28440 --- [tableService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T02:46:29.413+04:00  INFO 28440 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T02:46:29.782+04:00  INFO 28440 --- [tableService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16732340
+2026-02-27T02:46:29.795+04:00  INFO 28440 --- [tableService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T02:46:29.873+04:00  WARN 28440 --- [tableService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T02:46:31.524+04:00  INFO 28440 --- [tableService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T02:46:31.813+04:00  INFO 28440 --- [tableService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T02:46:32.923+04:00  WARN 28440 --- [tableService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T02:46:33.171+04:00  INFO 28440 --- [tableService] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T02:46:33.878+04:00 DEBUG 28440 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2026-02-27T02:46:34.056+04:00 DEBUG 28440 --- [tableService] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-02-27T02:46:34.118+04:00 DEBUG 28440 --- [tableService] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-27T02:46:34.177+04:00 DEBUG 28440 --- [tableService] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-27T02:46:34.962+04:00 DEBUG 28440 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-02-27T02:46:34.963+04:00 DEBUG 28440 --- [tableService] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-02-27T02:46:35.211+04:00  INFO 28440 --- [tableService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27T02:46:35.348+04:00  INFO 28440 --- [tableService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2026-02-27T02:46:35.489+04:00  INFO 28440 --- [tableService] [main] c.l.t.TableServiceApplication            : Started TableServiceApplication in 12.756 seconds (process running for 13.927)
+2026-02-27T02:46:36.125+04:00  INFO 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T02:46:36.125+04:00  INFO 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T02:46:36.126+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-27T02:46:36.126+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-27T02:46:36.127+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-27T02:46:36.130+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e8c465d
+2026-02-27T02:46:36.133+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1314700e
+2026-02-27T02:46:36.135+04:00 DEBUG 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-27T02:46:36.136+04:00  INFO 28440 --- [tableService] [RMI TCP Connection(4)-192.168.1.124] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2026-02-27T02:47:42.199+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/table/event/3/available/all", parameters={}
+2026-02-27T02:47:42.209+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#getAvailableTables(Long)
+2026-02-27T02:47:42.360+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-27T02:47:42.361+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[WeddingTable(id=4, tableNumber=Table No 3, capacity=5, occupiedSeats=0, eventId=3), WeddingTable(id (truncated)...]
+2026-02-27T02:47:42.377+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:48:21.355+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/12", parameters={}
+2026-02-27T02:48:21.356+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:48:21.416+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:48:21.502+04:00  INFO 28440 --- [tableService] [http-nio-8083-exec-2] c.l.t.controller.TableController         : Table assigned to guest with id 12
+2026-02-27T02:48:21.503+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:48:21.504+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Guest 12 successfully assigned to table 3"]
+2026-02-27T02:48:21.506+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:48:30.375+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/13", parameters={}
+2026-02-27T02:48:30.375+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:48:30.384+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:48:30.395+04:00  INFO 28440 --- [tableService] [http-nio-8083-exec-3] c.l.t.controller.TableController         : Table assigned to guest with id 13
+2026-02-27T02:48:30.396+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:48:30.396+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Guest 13 successfully assigned to table 3"]
+2026-02-27T02:48:30.397+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:48:36.580+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/14", parameters={}
+2026-02-27T02:48:36.581+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:48:36.599+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:48:36.610+04:00  INFO 28440 --- [tableService] [http-nio-8083-exec-4] c.l.t.controller.TableController         : Table assigned to guest with id 14
+2026-02-27T02:48:36.610+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:48:36.610+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Guest 14 successfully assigned to table 3"]
+2026-02-27T02:48:36.611+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:48:40.727+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/14", parameters={}
+2026-02-27T02:48:40.728+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:48:40.737+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:48:40.742+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.ltc.tableservice.exception.GlobalExceptionHandler#handleWeddingTableIsFullException(WeddingTableIsFullException)
+2026-02-27T02:48:40.742+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:48:40.743+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Table is full"]
+2026-02-27T02:48:40.744+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.ltc.tableservice.exception.WeddingTableIsFullException: Table is full]
+2026-02-27T02:48:40.745+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 406 NOT_ACCEPTABLE
+2026-02-27T02:49:12.264+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/15", parameters={}
+2026-02-27T02:49:12.265+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:49:12.274+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:49:12.275+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.ltc.tableservice.exception.GlobalExceptionHandler#handleGuestNotConfirmedYetException(GuestNotConfirmedYetException)
+2026-02-27T02:49:12.278+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-27T02:49:12.281+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorResponseDTO(status=406, message=Guest Not Confirmed Yet, timestamp=2026-02-27T02:49:12.27698010 (truncated)...]
+2026-02-27T02:49:12.283+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.ltc.tableservice.exception.GuestNotConfirmedYetException: Guest has not confirmed attendance.]
+2026-02-27T02:49:12.283+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 406 NOT_ACCEPTABLE
+2026-02-27T02:49:49.599+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/table/3/assign/15", parameters={}
+2026-02-27T02:49:49.600+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:49:49.611+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:49:49.619+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.ltc.tableservice.exception.GlobalExceptionHandler#handleWeddingTableIsFullException(WeddingTableIsFullException)
+2026-02-27T02:49:49.621+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:49:49.622+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Table is full"]
+2026-02-27T02:49:49.623+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.ltc.tableservice.exception.WeddingTableIsFullException: Table is full]
+2026-02-27T02:49:49.625+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 406 NOT_ACCEPTABLE
+2026-02-27T02:49:57.297+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/table/4/assign/15", parameters={}
+2026-02-27T02:49:57.297+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#assign(Long, Long)
+2026-02-27T02:49:57.306+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] o.s.w.c.HttpMessageConverterExtractor    : Reading to [com.ltc.tableservice.dto.GuestResponseDTO]
+2026-02-27T02:49:57.317+04:00  INFO 28440 --- [tableService] [http-nio-8083-exec-8] c.l.t.controller.TableController         : Table assigned to guest with id 15
+2026-02-27T02:49:57.317+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-27T02:49:57.318+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Guest 15 successfully assigned to table 4"]
+2026-02-27T02:49:57.324+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:50:06.276+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/table/event/3/available/all", parameters={}
+2026-02-27T02:50:06.277+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.tableservice.controller.TableController#getAvailableTables(Long)
+2026-02-27T02:50:06.282+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-27T02:50:06.282+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[WeddingTable(id=4, tableNumber=Table No 3, capacity=5, occupiedSeats=1, eventId=3)]]
+2026-02-27T02:50:06.283+04:00 DEBUG 28440 --- [tableService] [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-27T02:50:25.660+04:00  INFO 28440 --- [tableService] [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
+2026-02-27T02:50:25.688+04:00  WARN 28440 --- [tableService] [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection closed prematurely
+
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:91) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:69) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1405) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:301) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:901) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:813) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-27T02:50:30.657+04:00  INFO 28440 --- [tableService] [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-02-27T02:50:30.658+04:00  WARN 28440 --- [tableService] [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-02-27T02:50:43.147+04:00  INFO 28440 --- [tableService] [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-02-27T02:50:43.150+04:00  WARN 28440 --- [tableService] [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-02-27T02:50:59.547+04:00  INFO 28440 --- [tableService] [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-02-27T02:50:59.550+04:00  WARN 28440 --- [tableService] [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
